@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      Two T's Bar and Grill WebSite
+      Filename: contactusresult.html
+
+      Author: Timothy Grimes and Thomas Sander
+      Date: May 10, 2020
+
+      Supporting Files: Assets/Styles/contactusstyles.css
+	                    Assets/Styles/fstyles.css
+                        Assets/Images/twotslogo.jpg
+						Assets/Styles/contactus.html
+
+    -->
+	          <title>Two T's Bar and Grill, St. Louis, MO</title>
+  
+                <style> 
+			     .img-container {
+				   text-align: center; 
+				   display: block;
+				   }
+		        </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="contactusstyles.css">
+</head>
+    <body>
+        <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+        <header>
+			<span class="img-container"> <!-- Inline parent element -->
+			 <img src="twotslogo.jpg" alt= "Two T's Bar and Grill">
+		    </span>
+				
+             </header>
+              <nav class="sitenavigation">
+                <ul>
+				   <li><a href="index.html">Home</a></li>
+				   <li><a href="aboutus.html">About Us</a></li>
+				   <li><a href="hours.html">Hours</a></li>
+				   <li><a href="events.html">Events</a></li>
+				    <li><a href="contactus.html">Contact Us</a></li>
+		        </ul>
+	          </nav>
+      <section id="main">
+        <h1>Form Summary</h1>
+        <p>Your form has been submitted and you entered the following data:</p>
+
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+        <br/>
+        <br/>
+      </section>
+      <footer>
+        <address>
+         Two T's Bar and Grill &#183; 
+	     2347 Longhorn Avenue &#183; 
+	     St. Louis, MO 63114 &#183; 
+	     (314)-000-9000 &#183;
+	     Copyright 2020
+        </address>
+      </footer>
+    </body>
+</html>

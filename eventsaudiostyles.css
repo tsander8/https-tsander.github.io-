@@ -1,0 +1,16 @@
+/*
+
+   Two T's Bar and Grill Audio Style Sheet
+   
+   Author:            Timothy Grimes and Thomas Sander
+   Date:              May 10, 2020
+   Filename:          eventsaudiostyles.css
+   Supporting Files:  
+   
+*/
+
+/* Audio styles */
+audio, object, embed {
+    display: block;
+	margin: 15px auto;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		 <!--
+   
+            Two T's Bar and Grill WebSite
+	        Author: Timothy Grimes and Thomas Sander
+	        Date: May 10, 2020
+	  
+	        Filename:         events.html
+	        Supporting files: eventsaudiostyles.css, eventstablestyles.css, twotslogo.jpg
+   -->
+            <title>Two T's Bar and Grill Upcoming Events</title>
+  
+                <style> 
+			     .img-container {
+				   text-align: center; 
+				   display: block;
+				   }
+		        </style>
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="eventsaudiostyles.css">
+			<link rel="stylesheet" href="eventstablestyles.css">
+			
+    </head>
+
+    <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+        <header>
+	      <span class="img-container"> <!-- Inline parent element -->
+		    <img src="twotslogo.jpg" alt= "Two T's Bar and Grill">
+		  </span>
+        </header>
+              <nav class="sitenavigation">
+               <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+               </ul>
+              </nav>
+		
+			 <article id="contentstart">
+			  <div class="container">
+	            <h2>Upcoming Events: No Charge For Admission</h2>
+                 <p>Every Tuesday from 6:00pm to 10:00pm is Karaoke Night.</p>
+			     <p>Play the clip below to hear an excerpt from one of our
+			        customer's during Karaoke night.</p>
+			        <img src="karaoke.jpg" alt= "Karaoke">
+
+               <p>
+		        <audio controls="controls">
+			       <source src="morissette.m4a" />
+			       <source src="morissette.ogg" />
+		           <object type="application/x-shockwave-flash" width="350" height="21">
+			         <param name="movie" value="morissette.swf" />
+				     <embed src="morissette.swf" width="350" height="21">
+			       </object>
+			    </audio>
+
+                <cite>
+			       Hand In My Pocket </cite><br />
+                   Composed By: Alanis Morissette<br />
+                   Performed By: Stephanie, a Two T's Bar and Grill Patron
+		       </p>
+
+			    <table>
+		         <colgroup>
+		           <col class="firstCol" />
+		           <col class="feeColumns" span="3" />
+		         </colgroup>
+		         <thead>
+		           <tr>
+			          <th>Day of Week</th>
+			          <th>Date</th>
+			          <th>Time</th>
+					  <th>Event</th>
+		           </tr>
+		         </thead>
+		         <tbody>
+		           <tr>
+			          <td>Friday</td>
+                      <td>June 5, 2020</td>
+			          <td>7:00pm - 11:00pm</td>
+					  <td>Poker Night</td>
+		           </tr>
+		           <tr>
+		              <td>Thursday</td>
+			          <td>June 11, 2020</td>
+			          <td>7:00pm - 9:00pm</td>
+					  <td>Bingo Night</td>
+		           </tr>
+		           <tr>
+			          <td>Saturday</td>
+			          <td>June 13, 2020</td>
+			          <td>6:00pm - 12:00am</td>
+					  <td>Stand-Up Comedy Night</td>
+		           </tr>
+				   <tr>
+				      <td>Wednesday</td>
+					  <td>June 17, 2020</td>
+					  <td>7:00pm - 9:30pm</td>
+					  <td>Darts Competition</td>
+				   </tr>
+		         </tbody>
+	            </table>
+			  </div>
+             </article>
+      <footer>
+	    <p style= "text-align:center">
+	     Two T's Bar and Grill &#183; 
+	     2347 Longhorn Avenue &#183; 
+	     St. Louis, MO 63114 &#183; 
+	     (314)-000-9000 &#183;
+	     Copyright 2020
+      </footer>
+	</body>
+</html>

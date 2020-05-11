@@ -1,0 +1,199 @@
+/*
+
+   Two T's Bar and Grill Table Style Sheet
+   
+   Author:            Timothy Grimes and Thomas Sander
+   Date:              May 10, 2020
+   Filename:          eventstablestyles.css
+   Supporting Files:  
+   
+*/
+
+/* reset styles */
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+h1 {
+    text-align: center;
+    font-family: Times New Roman, Times, Serif;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    font-size: 2.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: black;
+   text-align: center;
+   background-color: #B8944D;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   display: inline-block;
+   font-size: 1.3em;
+   line-height: 1.4em;
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #34180f;
+}
+nav.sitenavigation a:visited {
+   color: #744f42;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: ivory;
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   padding: 1.4em;
+   background: #7eccec;
+   background: url("bar6.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+.container {
+   min-width: 600px;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: ivory;
+   overflow: auto;
+}
+h2 {
+   padding: 0.4em;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   margin: 1.4em 0 0.5em;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+
+/* form styles */
+form {
+   padding: 10px;
+}
+/* fieldset styles */
+fieldset {
+   margin-bottom: 0.8em;
+}
+fieldset fieldset {
+   margin-top: 1em;
+   padding: 0.8em;
+   border: 1px solid #777;
+}
+legend {
+   font-size: 1.25em;
+   
+}
+.contactinfo legend, .reserveinfo legend, .additionalinfo legend {
+   margin-left: -0.1em;
+   font-weight: bold;
+}
+/* label styles */
+label {
+   font-size: 1em;
+   line-height: 1.6em;
+}
+.contactinfo label {
+   display: block;
+   position: relative;
+   margin: 0.8em 0;
+}
+
+/* document-wide style */
+body {
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #7eccec;
+}
+
+/* footer section */
+footer {
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   clear: both;
+   background-color: rgb(248,14,5);
+}
+
+table {
+    font-size: 14px;
+	border-collapse: collapse;
+	border: 10px outset rgb(255, 153, 51);
+	margin: 10px auto;
+	width: 500px;
+}
+
+thead {
+    background-color: rgb(204,204,255);
+}
+
+th, td {
+   border: 1px solid black;
+   vertical-align: top;
+   padding: 5px;
+}
+
+tr td:nth-of-type(2), tr td:nth-of-type(3) {
+    text-align: right;
+}
+
+td:nth-child(1)
+{
+   background-color: rgb(153,255,204);
+}
+
+td:nth-child(2)
+{
+   background-color: rgb(255,204,255);
+}
+
+td:nth-child(3)
+{
+   background-color: rgb(26,209,255);
+}
+
+td:nth-child(4)
+{
+   background-color: rgb(255,210,77);
+}
+
+/* print styles */
+@media print {
+   .container, h1, h2, p {
+      color: black;
+      background: white;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 1in;
+}
